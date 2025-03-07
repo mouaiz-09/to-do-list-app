@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.coun {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(100deg, #0b003dcb, #021a85d7);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    background-color: wheat;
+    width: 40%;
+    height: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+
+
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+
+    margin-right: 10px;
+}
+
+.logo h2 {
+    color: #222020;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+/* input new style*/
+.new {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 20px;
+    height: 20%;
+
+
+}
+
+.new input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+.new button {
+    width: 100px;
+    height: 40px;
+    background-color: #ff5945;
+    color: #fff;
+    border: none;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+.new button:hover {
+    background-color: #0556b3f1;
+}
+
+/**/
+.botoom {
+    flex: 1;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2px;
+    font-size: 20px;
+
+
+}
+
+li p::before {
+    content: '';
+    margin-right: 10px;
+}
+
+li p {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+li input {
+    accent-color: #ff5945;
+    border: none !important;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    outline: none;
+}
+/* checked*/
+.chked{
+    text-decoration: line-through;
+    color: #ff5945;
+}
