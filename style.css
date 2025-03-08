@@ -1,25 +1,60 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    -moz-box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff00;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+body {
+
+    height: 100vh;
+
+    animation: glowingBG 5s infinite alternate;
+
+}
+
+body {
+    background: linear-gradient(45deg, #000000, #12122b, #0f6023);
+    background-size: 400% 400%;
+    transition: background 0.5s ease-in-out;
+}
+
+@keyframes glowingBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 .coun {
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(100deg, #0b003dcb, #021a85d7);
-    padding: 30px;
+    min-height: 85vh;
+    background: linear-gradient(#011a1bcb, #046e6ed7);
     display: flex;
     justify-content: center;
     align-items: center;
 
+
 }
 
 .container {
-    background-color: wheat;
-    width: 40%;
-    height: 50%;
+    width: 60%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -27,15 +62,25 @@
     justify-content: stretch;
     flex-direction: column;
 
+    background: rgba(255, 255, 255, 0.055);
+    /* شفافية */
+    
+    /* تأثير الزجاج الضبابي */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+    /* وهج مضيء أزرق سماوي */
+    border-radius: 20px;
+
+
 
 }
 
 .logo {
     width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+
 }
 
 .logo img {
@@ -46,10 +91,11 @@
 }
 
 .logo h2 {
-    color: #222020;
+    color: #ffffff;
     font-size: 24px;
     font-weight: 700;
-    font-family: cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
 }
 
 /* input new style*/
@@ -67,9 +113,8 @@
 .new input {
     width: 100%;
     height: 40px;
-    padding: 10px;
+    padding: 30px;
     border: none;
-    border-radius: 5px;
     outline: none;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -78,21 +123,24 @@
 
 .new button {
     width: 100px;
-    height: 40px;
-    background-color: #ff5945;
+    height: 60px;
+    background-color: #21d8c9;
     color: #fff;
     border: none;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 0px 15px 15px 0px;
     cursor: pointer;
     outline: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
 
 
 }
 
+
 .new button:hover {
-    background-color: #0556b3f1;
+    background-color: #06e9d6b7;
 }
 
 /**/
@@ -101,18 +149,37 @@
     padding: 0;
 }
 
-li {
+.botoom li {
     list-style: none;
     background-color: #ffffff;
-    padding: 10px;
+    padding: 15px;
     border-radius: 13px;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     gap: 2px;
     font-size: 20px;
+    margin-bottom: 5px;
 
 
+}
+
+li div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+li i {
+    cursor: pointer;
+    transition: 0.3s;
+    color: #000000;
+}
+
+.botoom li i:hover {
+    font-size: larger;
+    color: #ff1900;
 }
 
 li p::before {
@@ -135,8 +202,102 @@ li input {
     height: 30px;
     outline: none;
 }
+
 /* checked*/
-.chked{
+.chked {
     text-decoration: line-through;
     color: #ff5945;
+}
+
+.foter {
+    background: rgba(168, 0, 0, 0.055);
+    /* شفافية */
+   
+    /* تأثير الزجاج الضبابي */
+    box-shadow: 0 -15px 30px rgba(0, 255, 170, 0.8);
+    /* وهج مضيء أزرق سماوي */
+  
+    transition: 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px  2px;
+
+}
+.foter h2 {
+    font-family: "Reem Kufi", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: 20px;
+   text-transform: capitalize;
+}
+.foter h4{
+    font-family: "Reem Kufi", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.foter ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.dz {
+    font-size: 23px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dz:hover {
+    transform: rotate(360deg); /* تدوير كامل عند التمرير */
+}
+
+
+/* media query */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .logo h2 {
+        font-size: 30px;
+    }
+    .new input {
+        height: 30px;
+        font-size: 17px;
+    }
+    .new button {
+        height: 60px;
+    }
+    li {
+        padding: 7px;
+        border-radius: 5px;
+    }
+    li p {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    li i {
+        font-size: 25px;
+    }
+    .foter h2 {
+        font-size: 18px;
+    }
+    .foter h4 {
+        font-size: 13px;
+    }
+    .foter ul {
+        gap: 10px;
+    }
+    .dz {
+        font-size: 20px;
+    }
 }
